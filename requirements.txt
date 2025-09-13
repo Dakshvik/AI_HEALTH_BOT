@@ -1,8 +1,8 @@
-SpeechRecognition
-gTTS
-pyaudio
-huggingface_hub
 streamlit
 streamlit-chat
 audio-recorder-streamlit
+SpeechRecognition
+huggingface_hub
+gTTS
+
 
