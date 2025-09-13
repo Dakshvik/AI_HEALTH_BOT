@@ -1,6 +1,8 @@
 SpeechRecognition
-pyttsx3
-huggingface-hub
+gTTS
+pyaudio
+huggingface_hub
 streamlit
 streamlit-chat
 audio-recorder-streamlit
+
