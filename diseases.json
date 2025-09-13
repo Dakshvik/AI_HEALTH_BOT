@@ -1,0 +1,121 @@
+{
+  "common cold": {
+    "symptoms": ["Sneezing", "Cough", "Mild fever", "Sore throat"],
+    "prevention": ["Hand hygiene", "Avoid close contact"],
+    "vaccine_schedule": "No vaccine available; symptomatic management recommended.",
+    "myths": ["Cold exposure causes cold - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "headache": {
+    "symptoms": ["Fever", "Headache"],
+    "prevention": ["Hydration", "Rest", "Good hygiene"],
+    "vaccine_schedule": "Not applicable.",
+    "myths": ["All fevers indicate serious disease - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "heart attack": {
+    "symptoms": ["Chest pain", "Shortness of breath", "Weakness", "Sudden numbness"],
+    "prevention": ["Healthy diet", "Exercise", "Avoid smoking", "Regular health checkups"],
+    "vaccine_schedule": "Not applicable.",
+    "myths": ["Only elderly get heart attacks - False"],
+    "outbreak_info": "Not applicable."
+  },
+  "diabetes": {
+    "symptoms": ["Excessive thirst", "Frequent urination", "Fatigue", "Vision issues"],
+    "prevention": ["Balanced diet", "Exercise", "Weight control", "Regular screening"],
+    "vaccine_schedule": "Not applicable.",
+    "myths": ["Eating sugar directly causes diabetes - False"],
+    "outbreak_info": "Not applicable."
+  },
+  "cancer": {
+    "symptoms": ["Unintended weight loss", "Fatigue", "Lumps", "Persistent pain"],
+    "prevention": ["Avoid tobacco", "Vaccinations (HPV, HBV)", "Early screening"],
+    "vaccine_schedule": "HPV/HBV vaccines where applicable.",
+    "myths": ["All cancers are fatal - False", "Injuries cause cancer - False"],
+    "outbreak_info": "Not applicable."
+  },
+  "asthma": {
+    "symptoms": ["Wheezing", "Cough", "Shortness of breath"],
+    "prevention": ["Avoid triggers", "Reduce pollution exposure", "No smoking"],
+    "vaccine_schedule": "Not applicable.",
+    "myths": ["Non-smokers cannot get lung diseases - False"],
+    "outbreak_info": "Not applicable."
+  },
+  "tuberculosis": {
+    "symptoms": ["Long-term cough", "Weight loss", "Fever", "Night sweats"],
+    "prevention": ["BCG vaccination", "Respiratory hygiene"],
+    "vaccine_schedule": "BCG at birth; boosters not routinely given.",
+    "myths": ["TB is hereditary - False", "Only poor people get TB - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "malaria": {
+    "symptoms": ["Fever", "Chills", "Headache", "Fatigue"],
+    "prevention": ["Mosquito nets", "Repellents", "Remove stagnant water"],
+    "vaccine_schedule": "No widely used vaccine for general public; preventive measures recommended.",
+    "myths": ["Only rural areas have malaria - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "dengue": {
+    "symptoms": ["Fever", "Joint pain", "Rash", "Headache"],
+    "prevention": ["Avoid mosquito bites", "Eliminate breeding sites"],
+    "vaccine_schedule": "No widely used vaccine for general public; preventive measures recommended.",
+    "myths": ["Papaya leaves cure dengue - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "typhoid": {
+    "symptoms": ["High fever", "Weakness", "Stomach pain", "Headache"],
+    "prevention": ["Handwashing", "Safe water", "Hygiene"],
+    "vaccine_schedule": "Oral or injectable vaccine recommended for high-risk areas.",
+    "myths": ["Only people with poor hygiene get typhoid - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "hiv aids": {
+    "symptoms": ["Flu-like symptoms initially", "Immune deficiency later"],
+    "prevention": ["Safe sex", "Clean needles", "Regular testing"],
+    "vaccine_schedule": "No vaccine available; preventive measures recommended.",
+    "myths": ["HIV spreads via casual contact - False", "HIV spreads via mosquito bites - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "hepatitis b": {
+    "symptoms": ["Jaundice", "Fatigue", "Abdominal pain", "Nausea"],
+    "prevention": ["Vaccination", "Safe contact practices", "Hygiene"],
+    "vaccine_schedule": "Birth, 1 month, 6 months",
+    "myths": ["Only alcoholics get hepatitis - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "influenza": {
+    "symptoms": ["Fever", "Cough", "Body aches", "Fatigue", "Sore throat"],
+    "prevention": ["Vaccination", "Hygiene", "Avoid crowds"],
+    "vaccine_schedule": "Annual flu vaccine recommended.",
+    "myths": ["Flu is always harmless - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "diarrhea": {
+    "symptoms": ["Frequent loose stools", "Dehydration", "Abdominal cramps"],
+    "prevention": ["Safe drinking water", "Handwashing", "Hygiene"],
+    "vaccine_schedule": "Rotavirus vaccine for infants where applicable.",
+    "myths": ["Diarrhea always needs antibiotics - False"],
+    "outbreak_info": "No active outbreak reported in dataset."
+  },
+  "kidney disease": {
+    "symptoms": ["Swelling", "Fatigue", "Frequent urination", "Blood in urine"],
+    "prevention": ["Regular BP/sugar checks", "Avoid NSAIDs"],
+    "vaccine_schedule": "Not applicable.",
+    "myths": ["All kidney stones need surgery - False"],
+    "outbreak_info": "Not applicable."
+  },
+  "alzheimers": {
+    "symptoms": ["Memory loss", "Confusion", "Personality changes"],
+    "prevention": ["Healthy lifestyle may help"],
+    "vaccine_schedule": "Not applicable.",
+    "myths": ["Only old people get Alzheimer’s - False", "Memory loss is normal aging - False"],
+    "outbreak_info": "Not applicable."
+  },
+  "corona": {
+    "symptoms": ["Fever", "Cough", "Fatigue", "Shortness of breath", "Severe cases may have pneumonia"],
+    "prevention": ["Masks", "Social distancing", "Vaccination", "Hygiene"],
+    "vaccine_schedule": "Two-dose primary series + boosters as per national guidelines.",
+    "myths": ["COVID-19 is just like flu - False"],
+    "outbreak_info": "Active outbreaks vary by region."
+  }
+}

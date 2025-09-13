@@ -1,0 +1,6 @@
+SpeechRecognition
+pyttsx3
+huggingface-hub
+streamlit
+streamlit-chat
+audio-recorder-streamlit
