@@ -1,121 +1,446 @@
 {
   "common cold": {
-    "symptoms": ["Sneezing", "Cough", "Mild fever", "Sore throat"],
-    "prevention": ["Hand hygiene", "Avoid close contact"],
+    "symptoms": [
+      "Sneezing",
+      "Cough",
+      "Mild fever",
+      "Sore throat"
+    ],
+    "prevention": [
+      "Hand hygiene",
+      "Avoid close contact"
+    ],
     "vaccine_schedule": "No vaccine available; symptomatic management recommended.",
-    "myths": ["Cold exposure causes cold - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "Cold exposure causes cold - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "There is no cure; it usually clears on its own in about a week",
+      "Rest and drink plenty of warm fluids",
+      "Gargle with warm salt water for a sore throat",
+      "Paracetamol can ease fever and aches as per label or doctor's advice",
+      "Antibiotics do not work on colds",
+      "See a doctor if symptoms last more than 10 days or breathing becomes difficult"
+    ]
   },
   "headache": {
-    "symptoms": ["Fever", "Headache"],
-    "prevention": ["Hydration", "Rest", "Good hygiene"],
+    "symptoms": [
+      "Fever",
+      "Headache"
+    ],
+    "prevention": [
+      "Hydration",
+      "Rest",
+      "Good hygiene"
+    ],
     "vaccine_schedule": "Not applicable.",
-    "myths": ["All fevers indicate serious disease - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "All fevers indicate serious disease - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "Rest in a quiet, dim room and drink water",
+      "A cold or warm compress on the head or neck can help",
+      "Paracetamol can be used as per label or doctor's advice",
+      "Get urgent care for a sudden, very severe headache, or one with stiff neck, confusion, weakness, vision loss or after a head injury"
+    ]
   },
   "heart attack": {
-    "symptoms": ["Chest pain", "Shortness of breath", "Weakness", "Sudden numbness"],
-    "prevention": ["Healthy diet", "Exercise", "Avoid smoking", "Regular health checkups"],
+    "symptoms": [
+      "Chest pain",
+      "Shortness of breath",
+      "Weakness",
+      "Sudden numbness"
+    ],
+    "prevention": [
+      "Healthy diet",
+      "Exercise",
+      "Avoid smoking",
+      "Regular health checkups"
+    ],
     "vaccine_schedule": "Not applicable.",
-    "myths": ["Only elderly get heart attacks - False"],
-    "outbreak_info": "Not applicable."
+    "myths": [
+      "Only elderly get heart attacks - False"
+    ],
+    "outbreak_info": "Not applicable.",
+    "treatment": [
+      "This is a medical emergency: call the emergency number or go to a hospital immediately",
+      "Do not drive yourself; sit down and stay calm",
+      "Emergency staff may advise chewing an aspirin if you are not allergic",
+      "Hospital treatment includes clot-dissolving medicines or opening the blocked artery with a procedure",
+      "Quick treatment saves heart muscle and lives"
+    ]
   },
   "diabetes": {
-    "symptoms": ["Excessive thirst", "Frequent urination", "Fatigue", "Vision issues"],
-    "prevention": ["Balanced diet", "Exercise", "Weight control", "Regular screening"],
+    "symptoms": [
+      "Excessive thirst",
+      "Frequent urination",
+      "Fatigue",
+      "Vision issues"
+    ],
+    "prevention": [
+      "Balanced diet",
+      "Exercise",
+      "Weight control",
+      "Regular screening"
+    ],
     "vaccine_schedule": "Not applicable.",
-    "myths": ["Eating sugar directly causes diabetes - False"],
-    "outbreak_info": "Not applicable."
+    "myths": [
+      "Eating sugar directly causes diabetes - False"
+    ],
+    "outbreak_info": "Not applicable.",
+    "treatment": [
+      "Diabetes cannot usually be cured but can be well controlled",
+      "Follow a balanced diet, stay active and keep a healthy weight",
+      "Take medicines or insulin exactly as prescribed by a doctor",
+      "Check blood sugar regularly and attend regular checkups",
+      "Some people with type 2 diabetes can reach remission through weight loss, with medical guidance"
+    ]
   },
   "cancer": {
-    "symptoms": ["Unintended weight loss", "Fatigue", "Lumps", "Persistent pain"],
-    "prevention": ["Avoid tobacco", "Vaccinations (HPV, HBV)", "Early screening"],
+    "symptoms": [
+      "Unintended weight loss",
+      "Fatigue",
+      "Lumps",
+      "Persistent pain"
+    ],
+    "prevention": [
+      "Avoid tobacco",
+      "Vaccinations (HPV, HBV)",
+      "Early screening"
+    ],
     "vaccine_schedule": "HPV/HBV vaccines where applicable.",
-    "myths": ["All cancers are fatal - False", "Injuries cause cancer - False"],
-    "outbreak_info": "Not applicable."
+    "myths": [
+      "All cancers are fatal - False",
+      "Injuries cause cancer - False"
+    ],
+    "outbreak_info": "Not applicable.",
+    "treatment": [
+      "Treatment depends on the type and stage of cancer",
+      "Options include surgery, chemotherapy, radiation, targeted therapy and immunotherapy",
+      "Many cancers can be cured or controlled when found early",
+      "See a doctor or cancer specialist quickly if you notice a lump or unexplained weight loss"
+    ]
   },
   "asthma": {
-    "symptoms": ["Wheezing", "Cough", "Shortness of breath"],
-    "prevention": ["Avoid triggers", "Reduce pollution exposure", "No smoking"],
+    "symptoms": [
+      "Wheezing",
+      "Cough",
+      "Shortness of breath"
+    ],
+    "prevention": [
+      "Avoid triggers",
+      "Reduce pollution exposure",
+      "No smoking"
+    ],
     "vaccine_schedule": "Not applicable.",
-    "myths": ["Non-smokers cannot get lung diseases - False"],
-    "outbreak_info": "Not applicable."
+    "myths": [
+      "Non-smokers cannot get lung diseases - False"
+    ],
+    "outbreak_info": "Not applicable.",
+    "treatment": [
+      "Asthma cannot be cured but can be controlled well",
+      "Use a quick-relief (reliever) inhaler during an attack",
+      "Daily controller inhalers, if prescribed, prevent attacks",
+      "Avoid triggers such as smoke, dust and pollution",
+      "Get emergency help if breathing is very hard or the reliever inhaler does not help"
+    ]
   },
   "tuberculosis": {
-    "symptoms": ["Long-term cough", "Weight loss", "Fever", "Night sweats"],
-    "prevention": ["BCG vaccination", "Respiratory hygiene"],
+    "symptoms": [
+      "Long-term cough",
+      "Weight loss",
+      "Fever",
+      "Night sweats"
+    ],
+    "prevention": [
+      "BCG vaccination",
+      "Respiratory hygiene"
+    ],
     "vaccine_schedule": "BCG at birth; boosters not routinely given.",
-    "myths": ["TB is hereditary - False", "Only poor people get TB - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "TB is hereditary - False",
+      "Only poor people get TB - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "TB is curable with a full course of antibiotics, usually 6 months or more",
+      "Free TB treatment is available through government health centres",
+      "Never stop medicines early, even if you feel better, as this can cause drug-resistant TB",
+      "Cover your mouth when coughing and see a doctor if you have a cough lasting over 2 weeks"
+    ]
   },
   "malaria": {
-    "symptoms": ["Fever", "Chills", "Headache", "Fatigue"],
-    "prevention": ["Mosquito nets", "Repellents", "Remove stagnant water"],
+    "symptoms": [
+      "Fever",
+      "Chills",
+      "Headache",
+      "Fatigue"
+    ],
+    "prevention": [
+      "Mosquito nets",
+      "Repellents",
+      "Remove stagnant water"
+    ],
     "vaccine_schedule": "No widely used vaccine for general public; preventive measures recommended.",
-    "myths": ["Only rural areas have malaria - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "Only rural areas have malaria - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "Malaria is curable with antimalarial medicines after a blood test",
+      "Get tested and treated quickly, within 24 hours of fever",
+      "Take the full course prescribed by the doctor",
+      "Severe malaria with confusion, fits or breathing trouble is an emergency; go to a hospital at once"
+    ]
   },
   "dengue": {
-    "symptoms": ["Fever", "Joint pain", "Rash", "Headache"],
-    "prevention": ["Avoid mosquito bites", "Eliminate breeding sites"],
+    "symptoms": [
+      "Fever",
+      "Joint pain",
+      "Rash",
+      "Headache"
+    ],
+    "prevention": [
+      "Avoid mosquito bites",
+      "Eliminate breeding sites"
+    ],
     "vaccine_schedule": "No widely used vaccine for general public; preventive measures recommended.",
-    "myths": ["Papaya leaves cure dengue - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "Papaya leaves cure dengue - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "There is no specific medicine for dengue; care is supportive",
+      "Rest and drink plenty of fluids such as water, ORS and coconut water",
+      "Paracetamol can be used for fever; avoid aspirin and ibuprofen as they raise bleeding risk",
+      "Go to a hospital at once for severe stomach pain, repeated vomiting, bleeding, black stools, drowsiness or breathing trouble"
+    ]
   },
   "typhoid": {
-    "symptoms": ["High fever", "Weakness", "Stomach pain", "Headache"],
-    "prevention": ["Handwashing", "Safe water", "Hygiene"],
+    "symptoms": [
+      "High fever",
+      "Weakness",
+      "Stomach pain",
+      "Headache"
+    ],
+    "prevention": [
+      "Handwashing",
+      "Safe water",
+      "Hygiene"
+    ],
     "vaccine_schedule": "Oral or injectable vaccine recommended for high-risk areas.",
-    "myths": ["Only people with poor hygiene get typhoid - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "Only people with poor hygiene get typhoid - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "Typhoid is treated with antibiotics prescribed by a doctor",
+      "Take the full course even if you feel better",
+      "Rest and drink plenty of safe fluids and eat light, easily digestible food",
+      "Go to a hospital if there is severe stomach pain, confusion or very high fever"
+    ]
   },
   "hiv aids": {
-    "symptoms": ["Flu-like symptoms initially", "Immune deficiency later"],
-    "prevention": ["Safe sex", "Clean needles", "Regular testing"],
+    "symptoms": [
+      "Flu-like symptoms initially",
+      "Immune deficiency later"
+    ],
+    "prevention": [
+      "Safe sex",
+      "Clean needles",
+      "Regular testing"
+    ],
     "vaccine_schedule": "No vaccine available; preventive measures recommended.",
-    "myths": ["HIV spreads via casual contact - False", "HIV spreads via mosquito bites - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "HIV spreads via casual contact - False",
+      "HIV spreads via mosquito bites - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "There is no cure, but antiretroviral therapy (ART) controls the virus",
+      "With regular ART people can live long, healthy lives",
+      "ART is available free at government ART centres",
+      "People with an undetectable viral load do not pass HIV to partners",
+      "Take medicines daily and do not stop without medical advice"
+    ]
   },
   "hepatitis b": {
-    "symptoms": ["Jaundice", "Fatigue", "Abdominal pain", "Nausea"],
-    "prevention": ["Vaccination", "Safe contact practices", "Hygiene"],
+    "symptoms": [
+      "Jaundice",
+      "Fatigue",
+      "Abdominal pain",
+      "Nausea"
+    ],
+    "prevention": [
+      "Vaccination",
+      "Safe contact practices",
+      "Hygiene"
+    ],
     "vaccine_schedule": "Birth, 1 month, 6 months",
-    "myths": ["Only alcoholics get hepatitis - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "Only alcoholics get hepatitis - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "Most adults with acute hepatitis B recover with rest, fluids and healthy food",
+      "Chronic hepatitis B can be controlled with antiviral medicines under a doctor's care",
+      "Avoid alcohol and do not take unprescribed medicines or herbal products",
+      "Regular liver checkups are important",
+      "The vaccine prevents infection"
+    ]
   },
   "influenza": {
-    "symptoms": ["Fever", "Cough", "Body aches", "Fatigue", "Sore throat"],
-    "prevention": ["Vaccination", "Hygiene", "Avoid crowds"],
+    "symptoms": [
+      "Fever",
+      "Cough",
+      "Body aches",
+      "Fatigue",
+      "Sore throat"
+    ],
+    "prevention": [
+      "Vaccination",
+      "Hygiene",
+      "Avoid crowds"
+    ],
     "vaccine_schedule": "Annual flu vaccine recommended.",
-    "myths": ["Flu is always harmless - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "Flu is always harmless - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "Most people recover in about a week with rest and plenty of fluids",
+      "Paracetamol can ease fever and body aches",
+      "Antiviral medicine may be given by a doctor, especially to high-risk people if started early",
+      "Antibiotics do not work on flu",
+      "See a doctor if breathing is hard, symptoms get worse, or for children, pregnant women and older adults"
+    ]
   },
   "diarrhea": {
-    "symptoms": ["Frequent loose stools", "Dehydration", "Abdominal cramps"],
-    "prevention": ["Safe drinking water", "Handwashing", "Hygiene"],
+    "symptoms": [
+      "Frequent loose stools",
+      "Dehydration",
+      "Abdominal cramps"
+    ],
+    "prevention": [
+      "Safe drinking water",
+      "Handwashing",
+      "Hygiene"
+    ],
     "vaccine_schedule": "Rotavirus vaccine for infants where applicable.",
-    "myths": ["Diarrhea always needs antibiotics - False"],
-    "outbreak_info": "No active outbreak reported in dataset."
+    "myths": [
+      "Diarrhea always needs antibiotics - False"
+    ],
+    "outbreak_info": "No active outbreak reported in dataset.",
+    "treatment": [
+      "Drink ORS (oral rehydration solution) after every loose stool",
+      "Give zinc tablets to children for 10 to 14 days as advised",
+      "Keep eating and continue breastfeeding infants",
+      "Most cases do not need antibiotics",
+      "Go to a doctor if there is blood in stool, high fever, extreme thirst, no urine, or if an infant or older person is affected"
+    ]
   },
   "kidney disease": {
-    "symptoms": ["Swelling", "Fatigue", "Frequent urination", "Blood in urine"],
-    "prevention": ["Regular BP/sugar checks", "Avoid NSAIDs"],
+    "symptoms": [
+      "Swelling",
+      "Fatigue",
+      "Frequent urination",
+      "Blood in urine"
+    ],
+    "prevention": [
+      "Regular BP/sugar checks",
+      "Avoid NSAIDs"
+    ],
     "vaccine_schedule": "Not applicable.",
-    "myths": ["All kidney stones need surgery - False"],
-    "outbreak_info": "Not applicable."
+    "myths": [
+      "All kidney stones need surgery - False"
+    ],
+    "outbreak_info": "Not applicable.",
+    "treatment": [
+      "Treatment aims to slow the damage and protect the kidneys",
+      "Control blood pressure and blood sugar and eat less salt",
+      "Avoid painkillers such as NSAIDs unless a doctor allows",
+      "Take medicines as prescribed and have regular kidney tests",
+      "Advanced disease may need dialysis or a kidney transplant",
+      "Kidney stones: drink plenty of water; small ones often pass on their own, but see a doctor for severe pain"
+    ]
   },
   "alzheimers": {
-    "symptoms": ["Memory loss", "Confusion", "Personality changes"],
-    "prevention": ["Healthy lifestyle may help"],
+    "symptoms": [
+      "Memory loss",
+      "Confusion",
+      "Personality changes"
+    ],
+    "prevention": [
+      "Healthy lifestyle may help"
+    ],
     "vaccine_schedule": "Not applicable.",
-    "myths": ["Only old people get Alzheimer’s - False", "Memory loss is normal aging - False"],
-    "outbreak_info": "Not applicable."
+    "myths": [
+      "Only old people get Alzheimer’s - False",
+      "Memory loss is normal aging - False"
+    ],
+    "outbreak_info": "Not applicable.",
+    "treatment": [
+      "There is no cure, but treatment can ease symptoms and help daily life",
+      "Some medicines may slow memory decline for a time",
+      "A regular routine, a safe home and family support help a lot",
+      "Keep the person mentally and physically active",
+      "Talk to a doctor for the right care plan and caregiver support"
+    ]
   },
   "corona": {
-    "symptoms": ["Fever", "Cough", "Fatigue", "Shortness of breath", "Severe cases may have pneumonia"],
-    "prevention": ["Masks", "Social distancing", "Vaccination", "Hygiene"],
+    "symptoms": [
+      "Fever",
+      "Cough",
+      "Fatigue",
+      "Shortness of breath",
+      "Severe cases may have pneumonia"
+    ],
+    "prevention": [
+      "Masks",
+      "Social distancing",
+      "Vaccination",
+      "Hygiene"
+    ],
     "vaccine_schedule": "Two-dose primary series + boosters as per national guidelines.",
-    "myths": ["COVID-19 is just like flu - False"],
-    "outbreak_info": "Active outbreaks vary by region."
+    "myths": [
+      "COVID-19 is just like flu - False"
+    ],
+    "outbreak_info": "Active outbreaks vary by region.",
+    "treatment": [
+      "Most mild cases recover at home with rest, fluids and isolation",
+      "Paracetamol can ease fever and body aches",
+      "Seek medical care for breathing difficulty, chest pain, confusion or low oxygen level",
+      "Antiviral medicines may be given by a doctor to high-risk patients",
+      "Vaccination lowers the risk of severe illness"
+    ]
+  },
+  "fever": {
+    "symptoms": [
+      "High body temperature",
+      "Chills",
+      "Sweating",
+      "Body aches",
+      "Weakness"
+    ],
+    "prevention": [
+      "Hand hygiene",
+      "Rest",
+      "Drink plenty of fluids",
+      "Avoid contact with sick people"
+    ],
+    "treatment": [
+      "Rest and drink plenty of fluids",
+      "Wear light clothing and use a lukewarm sponge to cool the body",
+      "Paracetamol can be used as per label or doctor's advice",
+      "See a doctor if fever lasts more than 3 days, is above 103°F (39.4°C), or comes with rash, stiff neck, confusion or breathing trouble",
+      "Babies under 3 months with fever need a doctor at once"
+    ],
+    "vaccine_schedule": "Not applicable; depends on the cause of the fever.",
+    "myths": [
+      "All fevers indicate serious disease - False"
+    ],
+    "outbreak_info": "Not applicable."
   }
 }
