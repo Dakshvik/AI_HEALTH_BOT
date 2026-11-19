@@ -19,7 +19,7 @@ except Exception:
     st.error("Groq API key not found. Add GROQ_API_KEY to your Streamlit secrets.", icon="🔑")
     st.stop()
 
-GROQ_MODEL = "llama-3.1-8b-instant"  # fast; or "llama-3.3-70b-versatile"
+GROQ_MODEL = "openai/gpt-oss-20b"  # fast; or "llama-3.3-70b-versatile"
 
 # --- Session state ---
 if "messages" not in st.session_state:
