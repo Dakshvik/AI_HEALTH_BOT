@@ -44,11 +44,15 @@ def load_any_kb() -> Dict[str, Any]:
         if os.path.exists(name):
             try:
                 for k, v in load_kb(name).items():
-                    kb.setdefault(k, v)
+                    entry = kb.setdefault(k, {})
+                    for field, val in v.items():
+                        entry.setdefault(field, val)  # fill missing fields from any file
             except Exception:
                 continue
     for k, v in EXTRA_KB.items():
-        kb.setdefault(k, v)
+        entry = kb.setdefault(k, {})
+        for field, val in v.items():
+            entry.setdefault(field, val)
     return kb
 
 
@@ -63,8 +67,13 @@ EXTRA_KB = {
 }
 
 
+def _kb_signature():
+    """Changes whenever a KB file changes, so the cache never serves stale data."""
+    return tuple(os.path.getmtime(n) for n in ["dataset.json", "diseases.json"] if os.path.exists(n))
+
+
 @st.cache_data(show_spinner="Loading knowledge base...")
-def get_kb_cached() -> Dict[str, Any]:
+def get_kb_cached(signature) -> Dict[str, Any]:
     return load_any_kb()
 
 
@@ -269,7 +278,7 @@ def process_query(user_query: str):
     st.session_state.messages.append({"role": "user", "content": user_query})
 
     with st.spinner("Processing your query..."):
-        kb = get_kb_cached()
+        kb = get_kb_cached(_kb_signature())
         entity, intent = detect_entity_intent(user_query, kb)
 
         if not entity or not intent:
@@ -319,6 +328,8 @@ def main():
                 st.info("Enable Voice is turned off.")
         if st.session_state.get("last_error"):
             st.caption(f"Debug: {st.session_state['last_error']}")
+        _kb = get_kb_cached(_kb_signature())
+        st.caption(f"KB: {len(_kb)} topics, {sum('treatment' in v for v in _kb.values())} with treatment info")
         st.markdown("---")
         st.markdown("### About\nAsk me about:\n\n• Symptoms\n• Prevention\n• Vaccines\n• Myths\n• Outbreaks")
 
