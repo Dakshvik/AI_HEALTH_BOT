@@ -19,7 +19,7 @@ except Exception:
     st.error("Groq API key not found. Add GROQ_API_KEY to your Streamlit secrets.", icon="🔑")
     st.stop()
 
-GROQ_MODEL = "openai/gpt-oss-20b"  # fast; or "llama-3.3-70b-versatile"
+GROQ_MODEL = "openai/gpt-oss-20b"  # llama-3.1-8b-instant was shut down on Groq
 
 # --- Session state ---
 if "messages" not in st.session_state:
@@ -47,7 +47,20 @@ def load_any_kb() -> Dict[str, Any]:
                     kb.setdefault(k, v)
             except Exception:
                 continue
+    for k, v in EXTRA_KB.items():
+        kb.setdefault(k, v)
     return kb
+
+
+EXTRA_KB = {
+    "fever": {
+        "symptoms": ["High body temperature", "Chills", "Sweating", "Body aches", "Weakness"],
+        "prevention": ["Hand hygiene", "Rest", "Hydration"],
+        "vaccine_schedule": "Not applicable.",
+        "myths": ["All fevers indicate serious disease - False"],
+        "outbreak_info": "Not applicable.",
+    }
+}
 
 
 @st.cache_data(show_spinner="Loading knowledge base...")
@@ -98,6 +111,7 @@ INTENT_KEYWORDS = {
     "vaccine": ["vaccin", "immuniz", "shot"],
     "myth": ["myth", "true or false", "is it true"],
     "outbreak": ["outbreak", "epidemic", "spreading"],
+    "treatment": ["cure", "treat", "medicine", "remedy", "medication"],
 }
 
 
@@ -122,7 +136,7 @@ def detect_entity_intent(user_query: str, kb: Dict[str, Any]) -> Tuple[Optional[
 Query: "{user_query}"
 Known diseases: {diseases}
 Pick the closest known disease name if possible.
-Intent must be one of: symptoms, prevention, vaccine, myth, outbreak.
+Intent must be one of: symptoms, prevention, vaccine, myth, outbreak, treatment.
 Return JSON only: {{"entity": "...", "intent": "..."}}"""
     try:
         response = client.chat.completions.create(
@@ -132,12 +146,18 @@ Return JSON only: {{"entity": "...", "intent": "..."}}"""
                 {"role": "user", "content": prompt},
             ],
             temperature=0,
-            max_tokens=100,
+            max_tokens=1000,
+            reasoning_effort="low",
             response_format={"type": "json_object"},
         )
-        data = json.loads(response.choices[0].message.content)
+        choice = response.choices[0]
+        content = (choice.message.content or "").strip()
+        if choice.finish_reason == "length" or not content:
+            raise ValueError(f"empty or truncated NLU reply (finish_reason={choice.finish_reason})")
+        data = json.loads(content)
         entity, intent = data.get("entity"), data.get("intent")
         if entity and intent:
+            st.session_state["last_error"] = None
             return entity, intent
     except Exception as e:
         print(f"NLU error: {e}")
@@ -155,6 +175,7 @@ INTENT_ALIASES = {
     "vaccines": "vaccine_schedule", "vaccine schedule": "vaccine_schedule",
     "myth": "myths", "myths": "myths",
     "outbreak": "outbreak_info", "outbreaks": "outbreak_info",
+    "treatment": "treatment", "cure": "treatment",
 }
 
 
@@ -191,9 +212,14 @@ Friendly Explanation:"""
             ],
             temperature=0.5,
             max_tokens=1500,
-            reasoning_effort = "low",
+            reasoning_effort="low",
         )
-        return response.choices[0].message.content.strip()
+        choice = response.choices[0]
+        text = (choice.message.content or "").strip()
+        # Never show a cut-off reply: fall back to the plain KB answer
+        if choice.finish_reason == "length" or not text:
+            return f"Here's what I found: {answer}"
+        return text
     except Exception as e:
         print(f"Generative error: {e}")
         return f"Here's what I found: {answer}"
@@ -250,7 +276,10 @@ def process_query(user_query: str):
             msg = "Sorry, I couldn't understand the disease or intent. Could you please rephrase your question?"
         else:
             answer = get_answer(kb, entity, intent)
-            if not answer:
+            if not answer and INTENT_ALIASES.get(intent.strip().lower()) == "treatment":
+                msg = ("I don't have treatment details for that. Please check with a doctor "
+                       "or your local health worker for the right care.")
+            elif not answer:
                 msg = f"I don't have information about {intent} for {entity}. Is there something else I can help you with?"
             else:
                 msg = beautify_answer(answer, user_query)
