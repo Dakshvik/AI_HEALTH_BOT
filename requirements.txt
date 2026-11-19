@@ -2,7 +2,7 @@ streamlit
 streamlit-chat
 audio-recorder-streamlit
 SpeechRecognition
-huggingface_hub
+groq
 gTTS
 
 
