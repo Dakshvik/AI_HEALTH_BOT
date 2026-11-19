@@ -190,7 +190,8 @@ Friendly Explanation:"""
                 {"role": "user", "content": prompt},
             ],
             temperature=0.5,
-            max_tokens=200,
+            max_tokens=1500,
+            reasoning_effort = "low",
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
